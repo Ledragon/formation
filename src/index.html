@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formation</title>
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endinject -->
+</head>
+
+<body ng-app="app">
+    <nav-bar></nav-bar>
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+    <script src="/src/app.js"></script>
+    <script src="/src/layout/navbar.directive.js"></script>
+    <script src="/src/states/details/details.controller.js"></script>
+    <script src="/src/states/search/search.controller.js"></script>
+    <script src="/src/states/search/search.service.js"></script>
+    <!-- endinject -->
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron">
+                <h1>{{vm.message}}</h1>
+            </div>
+            <form>
+                <input class="form-control" ng-model="vm.formContent" placeholder="Movie title" />
+                <button class="btn btn-sm" type="submit" ng-click="vm.search()">Search</button>
+            </form>
+        </div>
+    </div>
+    <div ng-if="vm.isLoading">
+        <i class="fa fa-3x fa-spinner fa-pulse"></i>
+        </div>
+    <div class="row" ng-if="!vm.isLoading">
+        <div class="col-xs-12" ng-repeat="movie in vm.results">
+            <a ui-sref="details({imdbId: movie.imdbID})">
+                <div style="height:200px;overflow-y:hidden;padding:20px; border:1px gray solid;margin:10px;">
+                    <img src="{{movie.Poster}}" style="height:100%;width:auto;" />
+                    <span>{{movie.Title}}</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

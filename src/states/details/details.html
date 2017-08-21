@@ -1,0 +1,36 @@
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="well">
+            {{vm.movie.Plot}}
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <img src="{{vm.movie.Poster}}" alt="Poster" style="width:100%; height:auto;" />
+    </div>
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">Details</div>
+            <div class="panel-body">
+                <table>
+                    <tr>
+                        <th>Runtime</th>
+                        <td>{{vm.movie.Runtime}}</td>
+                    </tr>
+                    <tr>
+                        <th>Cast</th>
+                        <td>{{vm.movie.Actors}}</td>
+                    </tr>
+                    <tr>
+                        <th>Year</th>
+                        <td>{{vm.movie.Year}}</td>
+                    </tr>
+                    <tr>
+                        <th>Director</th>
+                        <td>{{vm.movie.Director}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

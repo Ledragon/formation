@@ -1,0 +1,24 @@
+{
+  "name": "formation",
+  "description": "Formation OM+CP",
+  "main": "index.js",
+  "authors": [
+    "Hugues Stefanski <hugues.stefanski@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.5.0",
+    "angular-ui-router": "~0.2.18",
+    "font-awesome": "~4.5.0"
+  }
+}
